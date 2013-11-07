@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<script type="text/javascript" src="ga.js"></script>
+
+<script type="text/javascript">
+		if (top.location!= self.location) {
+			top.location = self.location.href
+		}
+</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>3bored</title>
+	<link rel="stylesheet" href="main.css" />
+	<script type="text/javascript" charset="utf-8" src="mootools-1.2-core-yc.js"></script>
+	<script type="text/javascript" charset="utf-8" src="mootools-1.2-more.js"></script>
+	<script type="text/javascript" charset="utf-8" src="main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="objects.js"></script>
+</head>
+<body onload="loaded()">
+	<div id="fps"></div>
+	<div id="tier">Tier: <span id="tierNumber">0</span></div>
+	<div id="canvasContainer">
+		<canvas id="playField"></canvas>
+	</div>
+	<div id="chargeBars">
+		<div class="progressBar backgroundBar"></div>
+		<div id="electricCharge" class="progressBar"></div>
+		<div id="minimumCharge" class="progressBar"></div>
+		<div id="weaponCharge" class="progressBar"></div>
+	</div>
+	<div id="healthBarContainer">
+		<div class="progressBar backgroundBar"></div>
+		<div id="playerHealth" class="progressBar"></div>
+	</div>
+
+	<div id="onScreen">
+	</div>
+	<div id="help" class="overlay">
+		<h1>You dead!<!--Thanks Alli--></h1>
+		<div id="stats">
+		</div>
+		<p>You died mighty good, if you have no idea what's going on see the <a href="./help/index.html">help page</a>.</p>
+		<p>Press r to respawn</p>
+		<p>&nbsp;</p>
+		<p>You lasted <span id="timeBeforeDeath"></span> before dying, and <span id="timeBeforeFirstBlood"></span> before taking any damage. <span id="maxTierInsult">You suck and didn't even make it to the max tier.</span><span id="maxTierNormal">You lasted <span id="timeOnMaxTier"></span> in the max tier.</span></p>
+		<p>Ultimately it was a<span id="killedBy"></span> that did you in.</p>
+		<p><span id="bulletsSpawned"></span> bullets spawned. <span id="bulletsContacted"></span> hit you for <span id="damageTaken"></span> damage of a potential total of <span id="damagePossible"></span>.</p>
+		<p><span id="killTanks"></span> of <span id="spawnTanks"></span> tanks killed.</p>
+	 	<p><span id="killPlanes"></span> of <span id="spawnPlanes"></span> planes killed. You caused <span id="planeCrashes"></span> plane crashes.</p>
+		<p><span id="depthChargesDropped"></span> depth charges were dropped, and you disarmed <span id="depthChargesDisarmed"></span> of them.</p>
+		<p>You were healed for a total of <span id="healedTotal"></span>, <span id="healsWasted"></span> of which was wasted.</p>
+		<p>You witnessed <span id="orbitalStrikes"></span> orbital laser strikes, which killed <span id="orbitalKillTanks"></span> tanks, <span id="orbitalKillPlanes"></span> planes, and <span id="orbitalKillBullets"></span> bullets.</p>
+	</div>
+	<div id="pauseScreen" class="overlay">
+		Paused
+	</div>
+</body>
+</html>
